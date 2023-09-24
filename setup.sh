@@ -13,65 +13,64 @@ init_files() {
 	# init 'package.json'
 	echo \
 		'{
-  "name": "typescript",
-  "version": "1.0.0",
-  "description": "Example package.json for the ETNA TS pool",
-  "main": "build/index.js",
-  "type": "module",
-  "scripts": {
-    "dev": "tsc && node .",
-    "build": "tsc",
-    "start": "node .",
-    "lint": "eslint --fix"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^17.0.0",
-    "readline-sync": "^1.4.10"
-  },
-  "devDependencies": {
-    "@types/readline-sync": "^1.4.4",
-    "@types/node": "^20.6.3"
-  }
+	"name": "typescript",
+	"version": "1.0.0",
+	"description": "Example package.json for the ETNA TS pool",
+	"main": "build/index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "tsc && node .",
+		"build": "tsc",
+		"start": "node .",
+		"lint": "eslint --fix"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-airbnb-typescript": "^17.0.0",
+		"readline-sync": "^1.4.10"
+	},
+	"devDependencies": {
+		"@types/readline-sync": "^1.4.4",
+		"@types/node": "^20.6.3"
+	}
 }' \
 		>$name/package.json
 
 	# init 'tsconfig.json'
 	echo \
 		'{
-"compilerOptions": {
-"target": "es2016",
-"module": "NodeNext",
-"resolveJsonModule": true,
-"outDir": "build",
-"preserveConstEnums": true,
-"esModuleInterop": true,
-"forceConsistentCasingInFileNames": true,
-"strict": true,
-"skipLibCheck": true
-},
-"include": ["src"],
-"exclude": ["node_modules", "build"]
+	"compilerOptions": {
+		"target": "es2016",
+		"module": "NodeNext",
+		"resolveJsonModule": true,
+		"outDir": "build",
+		"preserveConstEnums": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"skipLibCheck": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "build"]
 }' \
 		>$name/tsconfig.json
 
 	# init '.eslintrc.json'
 	echo \
 		'{
-"extends": ["airbnb-base", "airbnb-typescript/base"],
-"parser": "@typescript-eslint/parser",
-"parserOptions": { "project": ["./tsconfig.json"] },
-"plugins": ["@typescript-eslint"],
-"rules": {
-"no-console": "off",
-"no-restricted-syntax": "off",
-"no-param-reassign": "off"
-},
-"ignorePatterns": ["build", "node_modules"]
-}
-' \
+	"extends": ["airbnb-base", "airbnb-typescript/base"],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": { "project": ["./tsconfig.json"] },
+	"plugins": ["@typescript-eslint"],
+	"rules": {
+		"no-console": "off",
+		"no-restricted-syntax": "off",
+		"no-param-reassign": "off"
+	},
+	"ignorePatterns": ["build", "node_modules"]
+}' \
 		>$name/.eslintrc.json
 
 	# init '.gitignore'
