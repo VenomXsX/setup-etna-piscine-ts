@@ -27,7 +27,10 @@ Supprimez le repo vide:
 Prenons le projet [01 - Majora's Mask Chapter I](https://intra.etna-alternance.net/#/sessions/9440/quest/51190).
 Vous allez faire `bash setup.sh DTS1-Majoras_Mask_Chapter1 git@rendu-git.etna-alternance.net:module-9440/activity-51190/group-1011501`.
 
-Ce script va cloner le repo de rendu de ce projet et le renommer en  `DTS1-Majoras_Mask_Chapter1`, il va également exécuter `npm install` pour récupérer toutes les dépendances dans `package.json`. Votre dossier devrait ressembler à ça:
+Ce script va cloner le repo de rendu de ce projet et le renommer en  `DTS1-Majoras_Mask_Chapter1`, il va également exécuter `npm install` pour récupérer toutes les dépendances dans `package.json`. 
+[ATTENTION] Ce script ne va pas marcher comme prévu si vous ne mettez pas un nom pour renommer le repo cloné.
+
+Votre dossier devrait ressembler à ça:
 
 ```bash
 DTS1-Majoras_Mask_Chapter1 
