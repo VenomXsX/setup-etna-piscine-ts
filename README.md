@@ -36,7 +36,6 @@ Votre dossier devrait ressembler à ça:
 DTS1-Majoras_Mask_Chapter1 
 ├── .gitignore
 ├── .eslintrc.json
-├── linter.sh
 ├── src
 ├── node_modules 
 ├── package-lock.json 

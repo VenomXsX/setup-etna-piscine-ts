@@ -34,6 +34,7 @@
         /* Skip type checking all .d.ts files. */
         "skipLibCheck": true
     },
+		"include": ["src"],
     "exclude": [
         "node_modules",
         "build"

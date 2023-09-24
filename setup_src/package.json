@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "typescript",
   "version": "1.0.0",
   "description": "Example package.json for the ETNA TS pool",
   "main": "build/index.js",

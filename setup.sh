@@ -2,21 +2,29 @@
 # Script pour setup votre dossier et clone automatiquement le repo pour la piscine TypeScript
 # Utilisation: bash setup.sh [l'intitulé-du-projet] [le-lien-pour-clone]
 
-title=$1
-cloneURL=$2
+cloneURL=$1
+title=$2
 
 if [ -z $cloneURL ]; then
-	echo
-	echo "Veuillez inclure le lien du repo à cloner"
+	printf "\nVeuillez inclure \033[1;32mle lien du repo\033[0m à cloner en 1er argument\n"
 	exit 1
-else if [ $cloneURL != "git@rendu-git.etna-alternance.net"* ]; then
-	echo
-	echo "Le lien à cloner semble d'être incorrect"
+fi
+
+if [ -z $title ]; then
+	printf "\nVeuillez entrer \033[1;32mun nom\033[0m en 2e argument\n"
 	exit 1
 fi
 
 git clone $cloneURL $title
-cp ./setup_src/.gitignore ./setup_src/linter.sh ./setup_src/package.json ./setup_src/package-lock.json ./setup_src/.eslintrc.json ./setup_src/tsconfig.json ./$title
+
+cp ./setup_src/* ./$title
+
 cd $title
 mkdir src/
+echo "console.log('Hello world');" > src/index.ts
 npm install
+
+printf "\n\033[1;32mInstallation terminé\033[0m\n"
+printf "\nExecuter la commande suivante:\n"
+printf '\n\033[1;36mcd "$title"\033[0m\n'
+printf '\n\033[1;36mnpm run dev\033[0m\n'
