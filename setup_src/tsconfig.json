@@ -8,7 +8,7 @@
             
         /* Modules */
         /* Specify the root folder within your source files. */
-        "module": "commonjs",
+        "module": "NodeNext",
         /* Specify the root folder within your source files. */
         "rootDir": "./src/",
         /* Enable importing .json files */
