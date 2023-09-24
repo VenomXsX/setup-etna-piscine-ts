@@ -30,7 +30,7 @@ Vous allez faire `bash setup.sh DTS1-Majoras_Mask_Chapter1 git@rendu-git.etna-al
 Ce script va cloner le repo de rendu de ce projet et le renommer en  `DTS1-Majoras_Mask_Chapter1`, il va également exécuter `npm install` pour récupérer toutes les dépendances dans `package.json`. Votre dossier devrait ressembler à ça:
 
 ```bash
-. 
+DTS1-Majoras_Mask_Chapter1 
 ├── .gitignore
 ├── .eslintrc.json
 ├── linter.sh
