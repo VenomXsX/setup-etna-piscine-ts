@@ -45,8 +45,8 @@ Ce script va cloner le repo de rendu de ce projet et le renommer en  `DTS1-Major
 
 ## Utiliser le linter (ESLint)
 
-Si vous n'avez pas de problèmes d'installation, vous devrez pouvoir utiliser le linter avec le script `linter.sh` que je vous ai inclut. Exécutez la commande suivante:
+Si vous n'avez pas de problèmes d'installation, vous devrez pouvoir utiliser le linter. Exécutez la commande suivante:
 
-`bash linter.sh [votre-fichier-typescript]`
+`npm run lint [votre-fichier-typescript]`
 
-Ce script exécute la commande: `./node_modules/.bin/eslint --fix [votre-fichier-typescript]` comme c'est une commande giga longue, je vous ai fait un script pour ça. 
+Ce script exécute la commande: `./node_modules/.bin/eslint --fix [votre-fichier-typescript]` comme c'est une commande giga longue, je vous ai fait un script pour ça.
