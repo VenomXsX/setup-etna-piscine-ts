@@ -1,4 +1,5 @@
 # Script Bash interactif pour setup votre repo de travail
-Vous n'avez qu'à à suivre les indications du script en lançant:
 
 `bash setup.sh`
+
+`usage: <init|help> <project_name?> <url_of_git_repo?>`
