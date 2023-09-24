@@ -8,4 +8,5 @@ cloneURL=$2
 git clone $cloneURL $title
 cp ./setup_src/.gitignore ./setup_src/linter.sh ./setup_src/package.json ./setup_src/package-lock.json ./setup_src/.eslintrc.json ./setup_src/tsconfig.json ./$title
 cd $title
+mkdir src/
 npm install

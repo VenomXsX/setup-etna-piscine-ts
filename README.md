@@ -34,6 +34,7 @@ DTS1-Majoras_Mask_Chapter1
 ├── .gitignore
 ├── .eslintrc.json
 ├── linter.sh
+├── src
 ├── node_modules 
 ├── package-lock.json 
 ├── package.json 
@@ -42,6 +43,7 @@ DTS1-Majoras_Mask_Chapter1
 └── README.md
 ```
 
+Vous allez ranger vos fichiers TypeScript dans `src/`. Pour compiler votre code TS, vous revenez sur votre dossier de projet et lancer `npm run build`. Vous obtenez un dossier `build/` où seront stockés vos fichiers TS de `src/`. Ensuite pour exéctuer vos fichiers JS, vous lancez `npm run start`. Ou si vous voulez faire les 2 en même temps, c'est possible avec `npm run dev`.
 
 ## Utiliser le linter (ESLint)
 
