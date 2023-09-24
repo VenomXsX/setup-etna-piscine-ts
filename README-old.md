@@ -1,0 +1,57 @@
+# Script Bash pour setup votre dossier et repo
+
+Les étapes sont ci-dessous
+
+
+## 1. Cloner ce repo dans votre dossier actuel
+
+J'organise mes fichiers ETNA dans le dossier `~/ETNA/` par exemple. Clonez ce repo avec: 
+
+`git clone https://github.com/VenomXsX/setup-etna-piscine-ts.git`
+
+## 2. Déplacer le contenu de ce repo dans votre dossier parent
+Cette commande va déplacer le script et un dossier nécessaire au fonctionnement du script dans votre dossier actuel (càd le dossier `~/ETNA/` pour reprendre mon exemple):
+
+`mv ./setup-etna-piscine-ts/setup.sh ./setup-etna-piscine-ts/setup_src .` 
+
+Supprimez le repo:
+
+`rm -r setup-etna-piscine-ts/`
+
+
+
+## 3. Exécutez le script `setup.sh`
+
+`bash setup.sh [url-pour-cloner] [nom-du-dossier]`
+
+Prenons le projet [01 - Majora's Mask Chapter I](https://intra.etna-alternance.net/#/sessions/9440/quest/51190).
+Vous allez faire `bash setup.sh git@rendu-git.etna-alternance.net:module-9440/activity-51190/group-1011501 dossier-projet-Majoras-Mask-Chapter1`.
+
+Ce script va cloner le repo de rendu de ce projet et le renommer en  `dossier-projet-Majoras-Mask-Chapter1`, il va également exécuter `npm install` pour récupérer toutes les dépendances dans `package.json`. 
+
+[ATTENTION] Ce script ne va pas marcher comme prévu si vous ne mettez pas un nom pour renommer le repo cloné.
+
+Votre dossier devrait ressembler à ça:
+
+```bash
+dossier-projet-Majoras-Mask-Chapter1 
+├── .gitignore
+├── .eslintrc.json
+├── src
+├── node_modules 
+├── package-lock.json 
+├── package.json 
+├── tsconfig.json
+├── ..
+└── README.md
+```
+
+Vous allez ranger vos fichiers TypeScript dans `src/`. Pour compiler votre code TS, vous revenez sur votre dossier de projet et lancer `npm run build`. Vous obtenez un dossier `build/` où seront stockés vos fichiers TS de `src/`. Ensuite pour exéctuer vos fichiers JS, vous lancez `npm run start`. Ou si vous voulez faire les 2 en même temps, c'est possible avec `npm run dev`.
+
+## Utiliser le linter (ESLint)
+
+Si vous n'avez pas de problèmes d'installation, vous devrez pouvoir utiliser le linter. Exécutez la commande suivante:
+
+`npm run lint [votre-fichier-typescript]`
+
+Ce script exécute la commande: `./node_modules/.bin/eslint --fix [votre-fichier-typescript]` comme c'est une commande giga longue, je vous ai fait un script pour ça.
