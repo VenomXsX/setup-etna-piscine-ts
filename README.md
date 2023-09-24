@@ -3,18 +3,18 @@
 Les étapes sont ci-dessous
 
 
-## 1. Cloner ce repo dans votre dossier parent
+## 1. Cloner ce repo dans votre dossier actuel
 
 J'organise mes fichiers ETNA dans le dossier `~/ETNA/` par exemple. Clonez ce repo avec: 
 
 `git clone https://github.com/VenomXsX/setup-etna-piscine-ts.git`
 
 ## 2. Déplacer le contenu de ce repo dans votre dossier parent
-Cette commande va déplacer le script et un dossier nécessaire au fonctionnement du script dans votre dossier parent (càd le dossier `~/ETNA/` pour reprendre mon exemple):
+Cette commande va déplacer le script et un dossier nécessaire au fonctionnement du script dans votre dossier actuel (càd le dossier `~/ETNA/` pour reprendre mon exemple):
 
 `mv ./setup-etna-piscine-ts/setup.sh ./setup-etna-piscine-ts/setup_src .` 
 
-Supprimez le repo vide:
+Supprimez le repo:
 
 `rm -r setup-etna-piscine-ts/`
 
