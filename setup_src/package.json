@@ -1,0 +1,23 @@
+{
+  "name": "fdi-dts1",
+  "version": "1.0.0",
+  "description": "Example package.json for the ETNA TS pool",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc && node .",
+    "build": "tsc",
+    "start": "node ."
+  },
+  "author": "Cameron CARRA",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.6.3",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/readline-sync": "^1.4.4"
+  }
+}
