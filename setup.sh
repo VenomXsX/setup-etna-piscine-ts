@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script pour setup votre dossier et clone automatiquement le repo pour la piscine TypeScript
-# Utilisation: bash setup.sh [l'intitulé-du-projet] [le-lien-pour-clone]
+# Utilisation: bash setup.sh [le-lien-pour-clone] [nom-du-dossier-a-renommer]
 
 cloneURL=$1
 title=$2

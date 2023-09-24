@@ -22,18 +22,19 @@ Supprimez le repo vide:
 
 ## 3. Exécutez le script `setup.sh`
 
-`bash setup.sh [nom-du-projet] [git-clone-url]`
+`bash setup.sh [url-pour-cloner] [nom-du-dossier]`
 
 Prenons le projet [01 - Majora's Mask Chapter I](https://intra.etna-alternance.net/#/sessions/9440/quest/51190).
-Vous allez faire `bash setup.sh DTS1-Majoras_Mask_Chapter1 git@rendu-git.etna-alternance.net:module-9440/activity-51190/group-1011501`.
+Vous allez faire `bash setup.sh git@rendu-git.etna-alternance.net:module-9440/activity-51190/group-1011501 dossier-projet-Majoras-Mask-Chapter1`.
 
-Ce script va cloner le repo de rendu de ce projet et le renommer en  `DTS1-Majoras_Mask_Chapter1`, il va également exécuter `npm install` pour récupérer toutes les dépendances dans `package.json`. 
+Ce script va cloner le repo de rendu de ce projet et le renommer en  `dossier-projet-Majoras-Mask-Chapter1`, il va également exécuter `npm install` pour récupérer toutes les dépendances dans `package.json`. 
+
 [ATTENTION] Ce script ne va pas marcher comme prévu si vous ne mettez pas un nom pour renommer le repo cloné.
 
 Votre dossier devrait ressembler à ça:
 
 ```bash
-DTS1-Majoras_Mask_Chapter1 
+dossier-projet-Majoras-Mask-Chapter1 
 ├── .gitignore
 ├── .eslintrc.json
 ├── src
