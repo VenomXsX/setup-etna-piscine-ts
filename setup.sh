@@ -17,7 +17,6 @@ init_files() {
 	"version": "1.0.0",
 	"description": "Example package.json for the ETNA TS pool",
 	"main": "build/index.js",
-	"type": "module",
 	"scripts": {
 		"dev": "tsc && node .",
 		"build": "tsc",
@@ -43,7 +42,7 @@ init_files() {
 		'{
 	"compilerOptions": {
 		"target": "es2016",
-		"module": "NodeNext",
+		"module": "CommonJS",
 		"resolveJsonModule": true,
 		"outDir": "build",
 		"preserveConstEnums": true,
